@@ -42,6 +42,5 @@ body {
   place-content: center;
   place-items: center;
   grid-auto-flow: column;
-  gap: 3px;
   background: pink !important;
 }
