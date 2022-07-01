@@ -5,7 +5,7 @@
   display: inline-grid;
   place-items: center;
   place-content: center;
-  margin: 0 calc(var(--s) / 2);
+  margin: 0 calc(var(--s) / 2.5);
 }
 .loader:before,
 .loader:after {
@@ -16,7 +16,7 @@
 .loader:before,
 .loader:after {
   height: var(--s);
-  width: calc(var(--s) / 5);
+  width: calc(var(--s) / 6);
   border-radius: var(--s);
   background: var(--c) calc(50% + var(--_i, 0) * 50%) / var(--s) var(--s);
   transform: translate(calc(var(--_i, 0s) * 200%));
