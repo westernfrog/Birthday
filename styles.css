@@ -1,3 +1,7 @@
+body {
+  font-family: "Poppins", sans-serif !important;
+}
+
 .loader {
   --s: 130px; /* control the size */
   --c: linear-gradient(135deg, #00a8c6, #8fbe00); /* control the coloration */
@@ -35,12 +39,15 @@
   }
 }
 
-body {
+.body {
   margin: 0;
   height: 100vh;
   display: grid;
   place-content: center;
   place-items: center;
   grid-auto-flow: column;
-  background: pink !important;
+  background: #e8a0bf !important;
+}
+h1.text {
+  font-size: 500%;
 }
