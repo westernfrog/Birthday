@@ -16,13 +16,13 @@ let app = {
     sheet: () => {
       app.data.sheet = [
         {
-          value: 500,
+          value: 300,
         },
         {
-          value: 500,
+          value: 300,
         },
         {
-          value: 500,
+          value: 300,
         },
       ];
 
