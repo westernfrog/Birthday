@@ -16,13 +16,13 @@ let app = {
     sheet: () => {
       app.data.sheet = [
         {
-          value: 200,
+          value: 300,
         },
         {
-          value: 200,
+          value: 300,
         },
         {
-          value: 200,
+          value: 300,
         },
       ];
 
@@ -149,7 +149,7 @@ let app = {
 
               // Adds balls to world
               Composite.add(instance.engine.world, [ball]);
-            }, i * 100);
+            }, i * 90);
           }
         }
 
