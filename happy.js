@@ -84,15 +84,11 @@ function setup() {
     } else if (hBlocks[i].classList.contains("prio2")) {
       startHeight += 1500;
     } else if (hBlocks[i].classList.contains("prio3")) {
-      startHeight += 2500;
+      startHeight += 2000;
     } else if (hBlocks[i].classList.contains("prio4")) {
-      startHeight += 3500;
-    } else if (hBlocks[i].classList.contains("prio5")) {
-      startHeight += 4500;
-    } else if (hBlocks[i].classList.contains("prio6")) {
-      startHeight += 5500;
+      startHeight += 2500;
     } else {
-      startHeight += 6500;
+      startHeight += 3000;
     }
     if (hBlocks[i].classList.contains("ball")) {
       blocks.push(
