@@ -1,5 +1,6 @@
 body {
   font-family: "Poppins", sans-serif !important;
+  background: #2c3639 !important;
 }
 
 h1.text {
@@ -8,11 +9,6 @@ h1.text {
 * {
   margin: 0;
 }
-
-body {
-  background: #2c3639 !important;
-}
-
 figure {
   height: 650px;
   width: 100%;

@@ -1,39 +1,13 @@
-:root {
-  --orange: #ff9f1c;
-  --red: #e71d36;
-  --blue: #2ec4b6;
-  --paleblue: #80a1c1;
-  --green: #3d7a3b;
-  --cream: #f6d8ae;
-  --darkgrey: #252323;
-  --dark: #011627;
-  --light: #acbdba;
-  --boxborder: 6px;
-  --ballborder: 12px;
-}
-
 html {
   font-size: 0.8em;
-  color: var(--dark);
-  background-color: var(--darkgrey);
+  background-color: #ffeeee;
   text-align: center;
 }
 body {
   font-family: "Poppins", sans-serif !important;
-  background-color: #252323 !important;
+  background-color: #576f72 !important;
 }
-a {
-  color: var(--dark);
-}
-svg:hover {
-  background-color: var(--light);
-}
-h3:hover {
-  background-color: var(--light);
-}
-li img:hover {
-  border-color: var(--light);
-}
+
 .text {
   font-size: 500%;
 }
@@ -54,23 +28,23 @@ canvas {
 .photo img {
   width: 120px;
   height: 120px;
-  border: var(--ballborder) solid var(--orange);
 }
 #intro {
-  background-color: var(--orange);
+  background-color: #f9ceee;
   font-size: 18px;
   width: 180px;
   padding: 10px;
   font-size: 22px;
-  border: var(--boxborder) solid var(--dark);
+  text-align: center;
 }
 h1 {
   width: 320px;
   height: 350px;
   padding-top: 10px;
   font-size: 70px;
-  background-color: var(--orange);
-  border: var(--boxborder) solid var(--dark);
+  background-color: #f1d4d4;
+  border-radius: 1em;
+  color: #cc0e74;
 }
 
 h2 {
@@ -78,31 +52,28 @@ h2 {
   height: 110px;
   padding-top: 10px;
   font-size: 50px;
-  background-color: var(--orange);
-  border: var(--boxborder) solid var(--dark);
+  background-color: #f1d4d4;
+  border-radius: 2em;
+  color: #cc0e74;
 }
 h3 {
   width: 200px;
   padding-top: 10px;
   font-size: 40px;
-  background-color: var(--blue);
-  border: var(--boxborder) solid var(--dark);
+  background-color: #ff6363;
+  border-radius: 1em;
 }
 .smaller {
   width: 240px;
 }
-svg {
-  fill: var(--red);
-  background-color: var(--dark);
-  display: block;
-  border-radius: 100%;
-}
+
 li > div {
-  background-color: var(--green);
+  background-color: #fdbaf8;
   width: 180px;
   padding: 10px;
   font-size: 14px;
-  border: var(--boxborder) solid var(--dark);
+  border-radius: 1em;
+  border: #000 solid;
 }
 p {
   margin-bottom: 10px;
@@ -110,4 +81,8 @@ p {
 li {
   text-decoration: none;
   display: grid;
+}
+.whole {
+  width: 100%;
+  height: 100%;
 }
