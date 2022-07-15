@@ -59,7 +59,7 @@ function init() {
   ]);
 
   for (let i = 0; i < 150; i++) {
-    let radius = Math.round(10 + (Math.random() * vmin) / 100);
+    let radius = Math.round(10 + (Math.random() * vmin) / 200);
     World.add(
       engine.world,
       Bodies.circle(
@@ -69,12 +69,12 @@ function init() {
         {
           render: {
             fillStyle: [
-              "#EA1070",
-              "#EAC03C",
-              "#25DDBC",
-              "#007DB0",
-              "#252B7F",
-              "#FF6040",
+              "#EDEDED",
+              "#FEE3EC",
+              "#F9C5D5",
+              "#F2789F",
+              "#D47AE8",
+              "#F4BEEE",
             ][Math.round(Math.random() * 6 - 0.5)],
           },
         }

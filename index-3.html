@@ -5,7 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Happy Birthday</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="100%"
+      href="https://cdn-icons-png.flaticon.com/512/7434/7434648.png"
+    />
   </head>
+
   <style>
     @import url("https://fonts.googleapis.com/css?family=Quicksand:300,500");
 
@@ -14,11 +21,9 @@
       overflow: hidden;
       font-family: "Quicksand", sans-serif;
     }
-
-    a {
-      color: black;
+    html {
+      background-color: #ffeeee;
     }
-
     h1 {
       font-weight: 500;
       position: absolute;
@@ -28,61 +33,11 @@
       font-size: 10vmin;
       transform: translateX(-50.3%) translateY(-52%);
       cursor: pointer;
-    }
-
-    #dot {
-      color: #ea1066;
-      font-family: times-new-roman, serif;
-      font-size: 10vmin;
-    }
-
-    #js {
-      color: #aaa;
-      font-weight: 300;
-    }
-
-    p {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(calc(-50% + 29.5vmin), calc(-50% - 3.8vmin));
-      font-size: 3vmin;
-      font-weight: 300;
-      width: 12vmin;
-      text-align: center;
-      color: #777;
-      cursor: pointer;
-    }
-
-    h2 {
-      top: 75%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 10vmin;
-      font-weight: 300;
-      box-sizing: border-box;
-      border: 0.4vmin dashed black;
-      border-radius: 200px;
-      background-color: #eee;
-      padding: 0 6vmin;
-      transition: all 0.3s ease;
-      cursor: pointer;
-    }
-
-    sup {
-      font-size: 6vmin;
-    }
-
-    h2:hover {
-      background-color: black;
-      border: 0.4vmin dashed white;
-      color: white;
+      background-color: inherit;
     }
   </style>
   <body>
-    <a href="#"
-      ><h1>MATTER<span id="dot">.</span><span id="js">JS</span></h1></a
-    >
+    <a href="#"><h1>MATTER</h1></a>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.12.0/matter.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
