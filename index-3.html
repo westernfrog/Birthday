@@ -42,9 +42,46 @@
       cursor: pointer;
       background-color: inherit;
     }
+    .switch input {
+      position: absolute;
+      opacity: 0;
+    }
+    .switch {
+      display: inline-block;
+      font-size: 20px;
+      height: 1em;
+      width: 2em;
+      background: #8443c1;
+      border-radius: 1em;
+    }
+    .switch div {
+      height: 1em;
+      width: 1em;
+      border-radius: 1em;
+      background: #fff;
+      box-shadow: 0 0.1em 0.3em rgba(0, 0, 0, 0.3);
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+    .switch input:checked + div {
+      -webkit-transform: translate3d(100%, 0, 0);
+      -moz-transform: translate3d(100%, 0, 0);
+      transform: translate3d(100%, 0, 0);
+    }
   </style>
   <body>
-    <a href="#" class="audio"><h1>i love you meri swetha hameshaa</h1></a>
+    <a href="#" class="audio"
+      ><h1>
+        i love you meri swetha hameshaa
+        <div class="container">
+          <label class="switch"
+            ><input type="checkbox" id="switch" />
+            <div></div
+          ></label>
+        </div>
+      </h1>
+    </a>
 
     <script src="js/index-3.js"></script>
   </body>
