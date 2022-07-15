@@ -3,14 +3,6 @@ $(".audio").click(function () {
   audio.play();
 });
 
-// document
-//   .getElementsByClassName("audio")
-//   .addEventListener("touchend", tapOrClick, false);
-
-// function tapOrClick(e) {
-//   const audio = new Audio("songs/3.mp3");
-//   audio.play();
-// }
 let Engine = Matter.Engine,
   Render = Matter.Render,
   World = Matter.World,
