@@ -87,6 +87,8 @@ function setup() {
       startHeight += 2000;
     } else if (hBlocks[i].classList.contains("prio4")) {
       startHeight += 2500;
+    } else if (hBlocks[i].classList.contains("prio5")) {
+      startHeight += 3000;
     } else {
       startHeight += 3000;
     }
