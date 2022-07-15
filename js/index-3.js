@@ -3,6 +3,17 @@ $(".audio").click(function () {
   audio.play();
 });
 
+$("#switch").click(function () {
+  if (this.checked) {
+    $("html").css("background-color", "#eaf6f6");
+    $("html").css("transition", "3s");
+    $(".switch").css("background", "#8443c1");
+  } else {
+    $("html").css("background-color", "#ffeeee");
+    $(".switch").css("background", "#F2789F");
+  }
+});
+
 let Engine = Matter.Engine,
   Render = Matter.Render,
   World = Matter.World,
