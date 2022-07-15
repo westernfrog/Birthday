@@ -1,5 +1,5 @@
 const audio = new Audio("songs/3.mp3");
-$(document).ready(function () {
+$(".audio").click(function () {
   audio.play();
 });
 
