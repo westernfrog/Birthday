@@ -1,3 +1,8 @@
+const audio = new Audio("songs/3.mp3");
+$(document).ready(function () {
+  audio.play();
+});
+
 let Engine = Matter.Engine,
   Render = Matter.Render,
   World = Matter.World,
