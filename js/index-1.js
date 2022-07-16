@@ -3,6 +3,14 @@ $(document).ready(function () {
   $("body").fadeIn(2000);
 });
 
+$("#switch").click(function () {
+  if (this.checked) {
+    $(".switch").css("background", "#3F4E4F");
+  } else {
+    $(".switch").css("background", "#94b49f");
+  }
+});
+
 let app = {
   colors: ["#FF874C", "#D8385E", "#FF4438", "#710252", "#FFB0A7"],
 
@@ -109,7 +117,7 @@ let app = {
         // Creates ground
         let ground = Bodies.rectangle(
           (width * 1) / 3,
-          height - thickness / 2,
+          height - thickness / 5,
           width,
           thickness,
           {

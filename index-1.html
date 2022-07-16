@@ -40,11 +40,48 @@
       margin: 0;
     }
     figure {
-      height: 650px;
+      height: 684px;
       width: 100%;
       max-width: 600px;
       margin: 0 auto;
       z-index: 0;
+    }
+    .switch input {
+      position: absolute;
+      opacity: 0;
+    }
+    .switch {
+      display: inline-block;
+      font-size: 20px;
+      height: 1em;
+      width: 2em;
+      background: #94b49f;
+      border-radius: 1em;
+    }
+    .switch div {
+      height: 1em;
+      width: 1em;
+      border-radius: 1em;
+      background: #fff;
+      box-shadow: 0 0.1em 0.3em rgba(0, 0, 0, 0.3);
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+    .switch input:checked + div {
+      -webkit-transform: translate3d(100%, 0, 0);
+      -moz-transform: translate3d(100%, 0, 0);
+      transform: translate3d(100%, 0, 0);
+    }
+    .audio-1,
+    .audio-2 {
+      text-decoration: none;
+    }
+    .audio-1 {
+      color: #51557e;
+    }
+    .audio-2 {
+      color: #816797;
     }
   </style>
   <body>
@@ -53,6 +90,12 @@
       class="container-fluid position-absolute top-50 start-50 translate-middle first"
     >
       <h1 class="text-start text-light text m-0">
+        <div class="container">
+          <label class="switch"
+            ><input type="checkbox" id="switch" />
+            <div></div
+          ></label>
+        </div>
         <span class="fw-bold">Playing</span> these
         <span class="fst-italic fw-bold">songs </span>
         <span class="fw-bold">to</span>
@@ -82,12 +125,14 @@
         <span>I</span>
         <span class="fst-italic fw-bold">hope</span>
         <span>you are</span>
-        <span class="fw-bold song1" style="color: #51557e">feeling fine.</span>
+        <span class="fw-bold song1">
+          <a class="audio-1"> feeling fine.</a></span
+        >
         <span class="fw-bold fst-italic" style="color: #c70a80">I </span>
         <span class="fw-bold" style="color: #c70a80">think</span>
         <span class="fst-italic" style="color: #c70a80"> we are</span>
-        <span class="fw-bold song2" style="color: #816797"
-          >better together.</span
+        <span class="fw-bold song2">
+          <a class="audio-2"> better together.</a></span
         >
       </h1>
     </div>
