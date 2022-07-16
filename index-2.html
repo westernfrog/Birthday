@@ -23,7 +23,8 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.12.0/matter.js"></script></head
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.12.0/matter.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script></head
   ><style>
     html {
       font-size: 0.8em;
@@ -117,12 +118,19 @@
       -moz-transform: translate3d(100%, 0, 0);
       transform: translate3d(100%, 0, 0);
     }
+    a.audio {
+      text-decoration: none;
+      color: #c14386;
+    }
+    a.audio:hover {
+      color: #cc0e74;
+    }
   </style>
   <body class="text-start">
     <h1 class="anarchy block prio1 fw-bold text">
-      happy birthday to youuu babayyy
+      happy <span><a href="#" class="audio">birthday</a></span> to youuu babayyy
     </h1>
-    <h2 id="intro" class="anarchy block prio1 fw-bold">
+    <h2 id="intro" class="anarchy block prio1 fw-bold container">
       may god bless you and follow you on every step you take!
     </h2>
     <div class="anarchy ball photo prio2">
@@ -252,7 +260,7 @@
         />
       </li>
     </ul>
-    <h2 id="intro" class="anarchy block prio1 fw-bold">
+    <h2 id="intro" class="anarchy block prio1 fw-bold container">
       i am so in love with you kanmani you are so special to me!
     </h2>
     <ul class="collection fw-bold" id="css">
@@ -316,6 +324,18 @@
         activate me when you are ready for the next page!
       </p></label
     >
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const audio = new Audio("songs/2.mp3");
+      $(".audio").click(function () {
+        audio.play();
+      });
+    </script>
+
     <script src="js/index-2.js"></script>
   </body>
 </html>

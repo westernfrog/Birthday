@@ -1,3 +1,8 @@
+$(document).ready(function () {
+  $("body").css("display", "none");
+  $("body").fadeIn(2000);
+});
+
 const audio = new Audio("songs/3.mp3");
 $(".audio").click(function () {
   audio.play();

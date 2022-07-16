@@ -1,4 +1,3 @@
-// module aliases
 var Engine = Matter.Engine,
   Render = Matter.Render,
   World = Matter.World,

@@ -1,3 +1,8 @@
+$(document).ready(function () {
+  $("body").css("display", "none");
+  $("body").fadeIn(2000);
+});
+
 $("#switch").click(function () {
   if (this.checked) {
     $("html").css("background-color", "#94B49F");
