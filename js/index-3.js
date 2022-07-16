@@ -5,12 +5,9 @@ $(".audio").click(function () {
 
 $("#switch").click(function () {
   if (this.checked) {
-    $("html").css("background-color", "#eaf6f6");
-    $("html").css("transition", "3s");
-
     $(".switch").css("background", "#8443c1");
+    $("html").css("transition", "3s");
   } else {
-    $("html").css("background-color", "#ffeeee");
     $(".switch").css("background", "#F2789F");
   }
 });
