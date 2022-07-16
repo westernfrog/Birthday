@@ -122,9 +122,6 @@
       text-decoration: none;
       color: #c14386;
     }
-    a.audio:hover {
-      color: #cc0e74;
-    }
   </style>
   <body class="text-start">
     <h1 class="anarchy block prio1 fw-bold text">
@@ -333,6 +330,7 @@
       const audio = new Audio("songs/2.mp3");
       $(".audio").click(function () {
         audio.play();
+        $(".audio").css("color", "#cc0e74");
       });
     </script>
 
