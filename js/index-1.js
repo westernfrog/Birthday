@@ -6,6 +6,7 @@ $(document).ready(function () {
 $("#switch").click(function () {
   if (this.checked) {
     $(".switch").css("background", "#3F4E4F");
+    $(".switch").css("transition", "3s");
   } else {
     $(".switch").css("background", "#94b49f");
   }
@@ -24,13 +25,13 @@ let app = {
     sheet: () => {
       app.data.sheet = [
         {
-          value: 300,
+          value: 200,
         },
         {
-          value: 300,
+          value: 200,
         },
         {
-          value: 300,
+          value: 200,
         },
       ];
 

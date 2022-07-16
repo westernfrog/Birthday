@@ -12,6 +12,7 @@ $("#switch").click(function () {
   if (this.checked) {
     $("html").css("background-color", "#ffeeee");
     $("html").css("transition", "3s");
+    $(".switch").css("transition", "3s");
     $(".switch").css("background", "#F2789F");
   } else {
     $(".switch").css("background", "#8443c1");
