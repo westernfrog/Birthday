@@ -6,10 +6,24 @@ $(document).ready(function () {
 $("#switch").click(function () {
   if (this.checked) {
     $(".switch").css("background", "#3F4E4F");
-    $(".switch").css("transition", "3s");
+    $(".switch").css("transition", "2s");
   } else {
     $(".switch").css("background", "#94b49f");
   }
+});
+const audio1 = new Audio("songs/audio-1.mp3");
+const audio2 = new Audio("songs/audio-2.mp3");
+
+$(".audio-1").click(function () {
+  audio2.pause();
+  audio1.play();
+  $(".audio-1").css("color", "#816797");
+});
+
+$(".audio-2").click(function () {
+  audio1.pause();
+  audio2.play();
+  $(".audio-2").css("color", "#51557e");
 });
 
 let app = {
