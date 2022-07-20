@@ -11,6 +11,7 @@ $("#switch").click(function () {
     $(".switch").css("background", "#94b49f");
   }
 });
+
 const audio1 = new Audio("songs/audio-1.mp3");
 const audio2 = new Audio("songs/audio-2.mp3");
 
