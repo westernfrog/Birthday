@@ -85,6 +85,54 @@
     .audio-2:hover {
       color: #816797;
     }
+    .switc {
+      display: inline-block;
+      height: 34px;
+      position: relative;
+      width: 60px;
+    }
+
+    .switc input {
+      display: none;
+    }
+
+    .slider {
+      background-color: #ccc;
+      bottom: 0;
+      cursor: pointer;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      transition: 0.4s;
+    }
+
+    .slider:before {
+      background-color: #fff;
+      bottom: 4px;
+      content: "";
+      height: 26px;
+      left: 4px;
+      position: absolute;
+      transition: 0.4s;
+      width: 26px;
+    }
+
+    input:checked + .slider {
+      background-color: #7c3e66;
+    }
+
+    input:checked + .slider:before {
+      transform: translateX(26px);
+    }
+
+    .slider.round {
+      border-radius: 34px;
+    }
+
+    .slider.round:before {
+      border-radius: 50%;
+    }
   </style>
   <body>
     <figure class="m-0"></figure>
@@ -135,6 +183,26 @@
         <span class="fw-bold song2">
           <a class="audio-2"> better together.</a></span
         >
+      </h1>
+    </div>
+    <div
+      class="container-fluid second py-5"
+      style="background-color: #7c3e66; color: #f2ebe9"
+    >
+      <h1 class="text">
+        <span class="fw-bold">Click the two</span>
+        <span class="fw-bold fst-italic" style="color: #a5becc">songs</span>
+        <span class="fw-bold" style="color: #ca4e79"> above</span>
+        <span class="fw-bold" style="color: #513252"> kya tumbhi naa.....</span>
+        <span class="fw-bold fst-italic" style="color: #ffc18e">for next</span>
+        <span class="fw-bold text-white">page</span>
+        <span class="fw-bold" style="color: #a5becc">toggle this!</span>
+        <div class="container text-center">
+          <label class="switc" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+          </label>
+        </div>
       </h1>
     </div>
     <script
