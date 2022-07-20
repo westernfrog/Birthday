@@ -3,17 +3,21 @@ $(document).ready(function () {
   $("body").fadeIn(2000);
 });
 
+const audio = new Audio("songs/1.mp3");
+const audio1 = new Audio("songs/audio-1.mp3");
+const audio2 = new Audio("songs/audio-2.mp3");
+
 $("#switch").click(function () {
   if (this.checked) {
     $(".switch").css("background", "#3F4E4F");
     $(".switch").css("transition", "2s");
+    audio1.pause();
+    audio2.pause();
+    audio.play();
   } else {
     $(".switch").css("background", "#94b49f");
   }
 });
-
-const audio1 = new Audio("songs/audio-1.mp3");
-const audio2 = new Audio("songs/audio-2.mp3");
 
 $(".audio-1").click(function () {
   audio2.pause();
