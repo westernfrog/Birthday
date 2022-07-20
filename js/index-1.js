@@ -35,6 +35,12 @@ $(".audio-2").click(function () {
   $(".audio-1").css("color", "#51557e");
 });
 
+$("#checkbox").click(function () {
+  if (this.checked) {
+    window.location.href = "index-2.html";
+  }
+});
+
 let app = {
   colors: ["#FF874C", "#D8385E", "#FF4438", "#710252", "#FFB0A7"],
 
