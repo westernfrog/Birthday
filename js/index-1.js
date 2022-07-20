@@ -20,6 +20,7 @@ $("#switch").click(function () {
 });
 
 $(".audio-1").click(function () {
+  audio.pause();
   audio2.pause();
   audio1.play();
   $(".audio-1").css("color", "#816797");
@@ -27,6 +28,7 @@ $(".audio-1").click(function () {
 });
 
 $(".audio-2").click(function () {
+  audio.pause();
   audio1.pause();
   audio2.play();
   $(".audio-2").css("color", "#816797");
